@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; 
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(198, 110, 110);
+    color: black;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-left: 4rem;
+    color: white;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover{
+    color:rgb(0, 0, 0);
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer; 
+}
+
+.skills {
+    position: relative;
+}
+
+.home:hover,
+.skills:hover,
+.contacts:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: rgb(149, 93, 93);
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    transition: 0.2s linear;
+    box-shadow: 0.3s ease #000000;
+}
+
+.home-content h1:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+span {
+    color: burlywood;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s linear;
+    box-shadow: 0.3s ease #000000;
+
+}
+
+.home-content h3:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.home-content p {
+    transition: transform 0.3s ease, box-shadow 0.3s ease #000000;
+    font-size: 1.7rem;
+    font-family: Poppins, sans-serif;
+    margin: 2rem 0 3rem 0;
+    line-height: 1.6;
+    color: rgb(18, 12, 16);
+}
+
+.home-content p:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.home-img {
+    border-radius: 50%;
+    margin-left: -150px;
+}
+
+.home-img img {
+    position: relative;
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #ce8e8e;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+
+.btn-contacts {
+    position: absolute;       
+    bottom: 2rem;          
+    left: 50%;             
+    transform: translateX(-50%);  
+}
+
+
+.btn-contacts:hover {
+    background-color: #ca6868; 
+    color: #000000;
+    transform: none;
+    box-shadow: none;
+}
+
+.skills:hover .btn-contacts {
+    transform: translateX(-50%);
+}
+
+.skills h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    transition: 0.2s linear;
+    box-shadow: 0.3s ease #000000;
+    text-align: center; 
+}
+
+.skills p {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: 0.2s linear;
+    box-shadow: 0.3s ease #000000;
+    text-align: center; 
+}
+
+.skills h3 {
+    font-size: 4rem;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    transition: color 0.2s linear; 
+}
+
+
+.skills h4 {
+    font-size: 4rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    transition: color 0.2s linear; 
+}
+
+.skills h5 {
+    text-align: left;
+    font-size: 4rem;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    transition: color 0.2s linear;
+}
+
+.skills ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.skills ul:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    background-color: transparent;
+    border: 0.2rem solid #231e1ec0;
+    font-size: 5rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: wheat;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-icons a:hover {
+    color: #000000;
+    transform: scale(1.3) translateY(-5px); 
+    background-color: rgb(185, 185, 185);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #000000;
+    border-radius: 4rem; 
+    font-size: 1.6rem;
+    color: #ca6f6f;
+    letter-spacing: 1.5px; 
+    font-weight: 600;
+    border: 2px solid #9d4949a3;
+    transition: 0.3s ease;
+    cursor: pointer; 
+}
+
+.btn:hover {
+    background-color: #c66e6eb6;
+    color: #000000;
+    transform: scale(1.03); 
+    box-shadow: 0 0 25px #bf5b96cd;
+}
+
+.contacts h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s linear;
+    box-shadow: 0.3s ease #000000;
+}
+
+.contacts p {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: 0.2s linear;
+    box-shadow: 0.3s ease #000000;
+    text-align: center; 
+}
+
+.btn-back-to-top {
+    justify-content: center;
+    position: absolute;
+    bottom: 2rem;       
+    left: 50%;     
+    transform: translateX(-50%);
+}
+.btn-back-to-top:hover {
+    background-color: #ca6868; 
+    color: #000000;
+    transform: none;
+    box-shadow: none;
+    justify-content: center;
+}
+
+
+.btn:hover .btn-back-to-top {
+    transform: translateX(-50%);
+}
